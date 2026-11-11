@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: brunafacchinetti227-droid/rei-tuktuk-site
+  branch: main
+
+media_folder: "imagens"
+public_folder: "/imagens"
+
+locale: "pt"
+
+collections:
+  - name: "conteudo"
+    label: "Conteúdo do site"
+    files:
+      - name: "pagina_inicial"
+        label: "Página inicial"
+        file: "conteudo/inicio.json"
+        format: "json"
+        fields:
+          - label: "Título principal"
+            name: "titulo"
+            widget: "string"
+          - label: "Descrição"
+            name: "descricao"
+            widget: "text"
+          - label: "Foto principal"
+            name: "foto"
+            widget: "image"
+            required: false
